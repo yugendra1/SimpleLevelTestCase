@@ -47,7 +47,7 @@ public class CYTC_007 {
 		
 		expectedResult = "yugendra";
 		actualResult = loginPOM.sendUserName("yugendra");
-		loginPOM.sendPassword("test1");
+		loginPOM.sendPassword("test2");
 		screenShot.captureScreenShot("Login_2");
 		loginPOM.clickLoginBtn(); 
 		
@@ -61,17 +61,15 @@ public class CYTC_007 {
 		String message;
 		
 		chgPwdPOM = new ChgPwdPOM(driver); 
-		chgPwdPOM.sendCurrentPwd("test1");
-		chgPwdPOM.sendNewPwd("test12");
+		chgPwdPOM.sendCurrentPwd("test2");
+		chgPwdPOM.sendNewPwd("test3");
 		chgPwdPOM.sendNewPwdConfirm("aaaaa");
 		screenShot.captureScreenShot("CYTC_007_1");
 		chgPwdPOM.clickSubmit(); 
 		expectedResult = "Passwords are not Equal";
 		message = driver.switchTo().alert().getText();
 		actualResult = message.replaceAll("\n","");
-		
-		System.out.println(actualResult);
-		
+				
 		assertEquals(expectedResult,actualResult);
 	}
 	

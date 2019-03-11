@@ -22,7 +22,7 @@ public class ModProfPOM {
 	@FindBy(xpath="//input[@value='Change']")
 	private WebElement changeBtn; 
 	
-	@FindBy(xpath="//input[@value='Yugendra Prabhu U']")
+	@FindBy(xpath="//input[@value='Kannan Manmohanan']")
 	private WebElement fullName; 
 	
 	@FindBy(id="saveButton")

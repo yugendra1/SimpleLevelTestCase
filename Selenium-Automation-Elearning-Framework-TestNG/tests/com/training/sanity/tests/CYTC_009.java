@@ -58,15 +58,17 @@ public class CYTC_009 {
 	public void modifyProfileTest() {
 		String expectedResult;
 		String actualResult;
-		
+		String message;
+
 		modProfPOM = new ModProfPOM(driver); 
 		modProfPOM.clickProfile();
 		modProfPOM.clearFullName();
-		modProfPOM.changeFullName("Kannan Manmohanan");
+		modProfPOM.changeFullName("Krishna Krish");
 		screenShot.captureScreenShot("CYTC_009_1");
 		modProfPOM.clickSubmit(); 
 		expectedResult = "Profile modified";
-		actualResult = driver.switchTo().alert().getText().trim();
+		message = driver.switchTo().alert().getText();
+		actualResult = message.replaceAll("\n","");
 		modProfPOM.acceptPopup();
 		
 		assertEquals(expectedResult,actualResult);

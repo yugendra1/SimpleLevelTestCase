@@ -46,7 +46,7 @@ public class CYTC_008 {
 		
 		expectedResult = "yugendra";
 		actualResult = loginPOM.sendUserName("yugendra");
-		loginPOM.sendPassword("test1");
+		loginPOM.sendPassword("test2");
 		screenShot.captureScreenShot("Login_3");
 		loginPOM.clickLoginBtn(); 
 		
@@ -57,12 +57,14 @@ public class CYTC_008 {
 	public void validLogoutTest() {
 		String expectedResult;
 		String actualResult;
-		
+		String message;
+
 		logoutPOM = new LogoutPOM(driver);
 		screenShot.captureScreenShot("CYTC_008_1");
 		logoutPOM.clickLogout(); 
 		expectedResult = "Please confirm to logout";
-		actualResult = driver.switchTo().alert().getText().trim();
+		message = driver.switchTo().alert().getText();
+		actualResult = message.replaceAll("\n","");
 		driver.switchTo().alert().accept();
 		
 		assertEquals(expectedResult,actualResult);

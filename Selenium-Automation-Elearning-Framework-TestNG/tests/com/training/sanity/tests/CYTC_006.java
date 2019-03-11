@@ -47,7 +47,7 @@ public class CYTC_006 {
 		
 		expectedResult = "yugendra";
 		actualResult = loginPOM.sendUserName("yugendra");
-		loginPOM.sendPassword("test12345");
+		loginPOM.sendPassword("test1");
 		screenShot.captureScreenShot("Login_1");
 		loginPOM.clickLoginBtn(); 
 		
@@ -60,9 +60,9 @@ public class CYTC_006 {
 		String actualResult;
 		
 		chgPwdPOM = new ChgPwdPOM(driver); 
-		chgPwdPOM.sendCurrentPwd("test12345");
-		chgPwdPOM.sendNewPwd("test1");
-		chgPwdPOM.sendNewPwdConfirm("test1");
+		chgPwdPOM.sendCurrentPwd("test1");
+		chgPwdPOM.sendNewPwd("test2");
+		chgPwdPOM.sendNewPwdConfirm("test2");
 		screenShot.captureScreenShot("CYTC_006_1");
 		chgPwdPOM.clickSubmit(); 
 		expectedResult = "The password was modified";
