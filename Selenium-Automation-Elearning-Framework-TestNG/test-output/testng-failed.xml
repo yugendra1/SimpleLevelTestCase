@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.training.sanity.tests.CYTC_010">
+      <class name="com.training.sanity.tests.CYTC_007">
         <methods>
-          <include name="setUp"/>
           <include name="changePasswordTest"/>
           <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.training.sanity.tests.CYTC_010 -->
+      </class> <!-- com.training.sanity.tests.CYTC_007 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
