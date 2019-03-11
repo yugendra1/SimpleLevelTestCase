@@ -58,6 +58,7 @@ public class CYTC_007 {
 	public void changePasswordTest() {
 		String expectedResult;
 		String actualResult;
+		String message;
 		
 		chgPwdPOM = new ChgPwdPOM(driver); 
 		chgPwdPOM.sendCurrentPwd("test1");
@@ -66,8 +67,10 @@ public class CYTC_007 {
 		screenShot.captureScreenShot("CYTC_007_1");
 		chgPwdPOM.clickSubmit(); 
 		expectedResult = "Passwords are not Equal";
-		actualResult = driver.switchTo().alert().getText().trim();
-		driver.switchTo().alert().accept();
+		message = driver.switchTo().alert().getText();
+		actualResult = message.replaceAll("\n","");
+		
+		System.out.println(actualResult);
 		
 		assertEquals(expectedResult,actualResult);
 	}
