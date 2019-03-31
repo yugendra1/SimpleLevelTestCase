@@ -2,36 +2,117 @@
 <testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="15153" started-at="2019-03-19T12:16:39Z" finished-at="2019-03-19T12:16:54Z">
+  <suite name="Default suite" duration-ms="28212" started-at="2019-03-31T08:38:50Z" finished-at="2019-03-31T08:39:18Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="15153" started-at="2019-03-19T12:16:39Z" finished-at="2019-03-19T12:16:54Z">
-      <class name="com.training.sanity.tests.CYTC_040">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.CYTC_040@66a3ffec]" name="setUp" is-config="true" duration-ms="5509" started-at="2019-03-19T12:16:39Z" finished-at="2019-03-19T12:16:44Z">
+    <test name="Default test" duration-ms="28212" started-at="2019-03-31T08:38:50Z" finished-at="2019-03-31T08:39:18Z">
+      <class name="com.training.sanity.tests.CYTC_070">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.CYTC_070@77caeb3e]" name="setUp" is-config="true" duration-ms="7474" started-at="2019-03-31T08:38:50Z" finished-at="2019-03-31T08:38:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validLoginTestAdmin()[pri:1, instance:com.training.sanity.tests.CYTC_040@66a3ffec]" name="validLoginTestAdmin" duration-ms="1296" started-at="2019-03-19T12:16:44Z" finished-at="2019-03-19T12:16:46Z">
+        <test-method status="PASS" signature="validLoginTestAdmin()[pri:1, instance:com.training.sanity.tests.CYTC_070@77caeb3e]" name="validLoginTestAdmin" duration-ms="1597" started-at="2019-03-31T08:38:58Z" finished-at="2019-03-31T08:38:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginTestAdmin -->
-        <test-method status="PASS" signature="sendMessageTest()[pri:2, instance:com.training.sanity.tests.CYTC_040@66a3ffec]" name="sendMessageTest" duration-ms="4484" started-at="2019-03-19T12:16:46Z" finished-at="2019-03-19T12:16:50Z">
+        <test-method status="PASS" signature="advertisementTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.training.sanity.tests.CYTC_070@77caeb3e]" name="advertisementTest" duration-ms="5573" started-at="2019-03-31T08:39:00Z" data-provider="adv-inputs" finished-at="2019-03-31T08:39:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mariyabal]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[birth day offer]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Example ad category]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[900.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[birth day offer for member]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sendMessageTest -->
-        <test-method status="PASS" signature="validLoginTestMember()[pri:3, instance:com.training.sanity.tests.CYTC_040@66a3ffec]" name="validLoginTestMember" duration-ms="1171" started-at="2019-03-19T12:16:50Z" finished-at="2019-03-19T12:16:51Z">
+        </test-method> <!-- advertisementTest -->
+        <test-method status="PASS" signature="advertisementTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.training.sanity.tests.CYTC_070@77caeb3e]" name="advertisementTest" duration-ms="5438" started-at="2019-03-31T08:39:06Z" data-provider="adv-inputs" finished-at="2019-03-31T08:39:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[manzoor]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[new offer]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Example ad category]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[500.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[new offer for member]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validLoginTestMember -->
-        <test-method status="PASS" signature="viewMessageTest()[pri:4, instance:com.training.sanity.tests.CYTC_040@66a3ffec]" name="viewMessageTest" duration-ms="959" started-at="2019-03-19T12:16:51Z" finished-at="2019-03-19T12:16:52Z">
+        </test-method> <!-- advertisementTest -->
+        <test-method status="PASS" signature="advertisementTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.training.sanity.tests.CYTC_070@77caeb3e]" name="advertisementTest" duration-ms="5444" started-at="2019-03-31T08:39:11Z" data-provider="adv-inputs" finished-at="2019-03-31T08:39:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sunil]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[special offer]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Example ad category]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[8999.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[christmas offer for member]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- viewMessageTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.CYTC_040@66a3ffec]" name="tearDown" is-config="true" duration-ms="1699" started-at="2019-03-19T12:16:52Z" finished-at="2019-03-19T12:16:54Z">
+        </test-method> <!-- advertisementTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.CYTC_070@77caeb3e]" name="tearDown" is-config="true" duration-ms="1729" started-at="2019-03-31T08:39:17Z" finished-at="2019-03-31T08:39:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.training.sanity.tests.CYTC_040 -->
+      </class> <!-- com.training.sanity.tests.CYTC_070 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

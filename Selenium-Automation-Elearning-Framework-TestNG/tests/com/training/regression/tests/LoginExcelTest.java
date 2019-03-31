@@ -39,7 +39,7 @@ public class LoginExcelTest {
 		loginPOM = new LoginPOM(driver);
 		baseUrl = properties.getProperty("baseURL");
 		screenShot = new ScreenShot(driver);
-		// open the browser
+		// open the browser  
 		driver.get(baseUrl);
 	}
 
@@ -53,6 +53,8 @@ public class LoginExcelTest {
 		loginPOM.sendUserName(userName);
 		loginPOM.sendPassword(password);
 		loginPOM.clickLoginBtn();
+		System.out.println(userName);
+		System.out.println(password);
 		screenShot.captureScreenShot(userName);
 
 	}

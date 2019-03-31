@@ -18,7 +18,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
  *      participatns are asked to refractor this path in the property file and
  *      access.
  */
-public class ApachePOIExcelRead {
+public class ApachePOIExcelReadAdv {
 	public  String [][] getExcelContent(String fileName) {
 		int rowCount =0; 
 		String [][] list1 = null; 
@@ -89,9 +89,9 @@ public class ApachePOIExcelRead {
 	}
 
 	public static void main(String[] args) {
-		String fileName = "C:/Yugi/Login_Excel.xlsx";
+		String fileName = "C:/Yugi/Advertisement_Excel.xlsx";
 		
-		for(String [] temp : new ApachePOIExcelRead().getExcelContent(fileName)){
+		for(String [] temp : new ApachePOIExcelReadAdv().getExcelContent(fileName)){
 			for(String  tt : temp){
 				System.out.println(tt);
 			}
